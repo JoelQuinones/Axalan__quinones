@@ -9,7 +9,129 @@
 	<title>Axalan</title>
 </head>
 <body>
+<!--
+	Header
+-->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  	<a class="navbar-brand" href="../index.html">
+		  		<img src="../IMG/logos_iconos/logo.png" class="header__logo">
+		  	</a>
+		  	<h1><a href="../index.html">Axalan</a></h1>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    	<ul class="navbar-nav mr-auto">
+		    		<li class="nav-item active">
+		        		<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+		    		</li>
+					<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="HTML/productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Productos
+				        </a>
+			        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					        <a class="dropdown-item" href="productos.html#condimentos">Condimentos</a>
+					        <a class="dropdown-item" href="productos.html#legumbres">Legumbres</a>
+					        <a class="dropdown-item" href="productos.html#snacks">Snacks</a>
+			        	</div>
+		      		</li>		    		
+		    		<li class="nav-item active">
+		        		<a class="nav-link" href="ofertas.html">Ofertas <span class="sr-only">(current)</span></a>
+		    		</li>
+		    		<li class="nav-item active">
+		        		<a class="nav-link" href="compras.html">Compras <span class="sr-only">(current)</span></a>
+		    		</li>
+		    	</ul>
+		  	</div>
+		</nav>
+	</header>
+	<main>
+		<div class="titulo">
+			<h2>Tu lista de compras!</h2>
+				<div class="lista">			
+				<div class="lista__titulos">
+					<div>
+						<h3>Productos</h3>
 
+					</div>
+					<div class="h3">
+						<h3>Precios</h3>
+					</div>						
+				</div>
+				<div class="lista__pyp d-flex">
+					<form>
+						<div class="lista__productos pyp">
+							<ul class="ul">
+								<li>
+									<label>Producto</label>
+									<input type="number" name="cantidad" readonly class="input">
+								</li> 
+								<li>
+									<label>Producto</label>
+									<input type="number" name="cantidad" readonly class="input">
+								</li> 
+								<li>
+									<label>Producto</label>
+									<input type="number" name="cantidad" readonly class="input">
+								</li>
+							</ul> 
+							<ul>
+								<li>
+									<input type="number" name="precio" readonly placeholder="$$$" class="input">
+								</li>
+								<li>
+									<input type="number" name="precio" readonly placeholder="$$$" class="input">
+								</li>
+								<li>
+									<input type="number" name="precio" readonly placeholder="$$$" class="input">
+								</li>
+							</ul>
+						</div>
+						<div class="total">
+							<div>
+								<label>TOTAL</label>
+							</div class="input">
+							<div>
+								<input type="number" name="total" readonly placeholder="$$$" class="input">
+							</div>
+						</div>
+						<div class="enviar">
+							<input type="submit" name="enviar">
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</main>
+<!--
+	Footer
+-->
+	<footer>
+		<h4>Conocenos</h4>
+		<div class="footer__conocenos">
+			<form>
+			  <div class="form-group">
+			    <label for="exampleFormControlInput1">Email address</label>
+			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlInput1">Nombre y apellido</label>
+			    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlTextarea1">Escribenos un mensaje</label>
+			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			  </div>
+			  <input type="submit" name="enviar" >
+			</form>
+		</div>
+		<div class="footer__direccion">
+			<h4>Nuestra direccion</h4>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26315.054251085923!2d-58.59608227201266!3d-34.46783796314432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5264e4c49d1%3A0x225695ea7edb62c0!2sNUEVO%20MERCADO%20DE%20SAN%20FERNANDO!5e0!3m2!1ses-419!2sar!4v1626724126602!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

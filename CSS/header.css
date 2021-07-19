@@ -1,0 +1,14 @@
+*{
+	margin: 0 !IMPORTANT;
+	padding: 0 !IMPORTANT;
+	box-sizing: border-box !important;
+}
+header{
+background: rgb(31,31,32);
+background: linear-gradient(180deg, rgba(31,31,32,1) 72%, rgba(32,32,33,1) 74%, rgba(33,33,34,1) 77%, rgba(39,39,41,0.9332107843137255) 100%);
+	color: white;
+}
+.dropdown-item{
+	background-color: #1f1f21;
+	color: white;
+}
