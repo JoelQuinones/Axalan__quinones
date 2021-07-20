@@ -1,0 +1,43 @@
+@import "vars";
+@import "fonts";
+
+/* 
+Customizacion del header
+*/
+body{
+	background-color: $fondo;
+}
+header{
+	background-color: $fondo_titulos;
+}
+h1, h2, h3, h4, h5{
+	font-family: $letras_titulos;
+	color: $letras_color;
+}
+a, p, tr, label{
+	font-family: 'PT Sans', sans-serif;
+	color: $letras_color;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: $letras_color;
+}
+.navbar-light .navbar-nav .nav-link {
+   	color: $letras_color;
+}
+footer{
+	background-color: $fondo_titulos;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media screen and (min-width: 992px){
+	footer{
+		flex-direction: row;
+		justify-content: space-around;
+		.footer__conocenos{
+			width: 400px;
+			align-self: center;
+		}
+	}
+}
