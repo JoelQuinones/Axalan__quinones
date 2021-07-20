@@ -1,0 +1,41 @@
+@import "vars";
+
+main{
+	margin: 30px;
+	h2{
+	text-align: center;
+	margin-bottom: 10px;
+	}
+}
+.main__nosotros{
+	margin-top: 50px;
+	background-color: $fondo_titulos;
+	box-shadow: -10px -10px 5px $fondo_titulos;
+}
+.main__ofertas{
+	div{
+		display: flex;
+		flex-wrap: wrap;
+		b{
+			color: $letras_color;
+		}
+	}
+}
+@media screen and (min-width: 992px){
+	main{
+		margin: 100px;
+		.carousel-caption{
+			color: black;
+		}
+	}
+	.nosotros{
+		dispay: flex;
+	}
+	.main__ofertas{
+		margin-top: 50px; 
+		.ofertas__img{
+			justify-content: space-around;
+		}
+	}
+	
+}	
