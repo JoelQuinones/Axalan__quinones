@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Ubuntu:wght@500&display=swap");
+.productos form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .productos form .condimentos {
+    margin-top: 10px; }
+
+.card {
+  background-color: #1f1f21; }
+
+@media screen and (min-width: 992px) {
+  .productos .condimentos1, .productos .legumbres1, .productos .snacks1 {
+    display: flex;
+    flex-direction: row; }
+    .productos .condimentos1 .card, .productos .legumbres1 .card, .productos .snacks1 .card {
+      margin: 40px; }
+      .productos .condimentos1 .card img, .productos .legumbres1 .card img, .productos .snacks1 .card img {
+        height: 286px; } }
