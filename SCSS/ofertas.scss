@@ -1,0 +1,28 @@
+@import "vars";
+
+h3{
+	margin: 30px;
+	@include letras(20px, #ffff);
+	background-color: $fondo_normales;
+	border: $border;
+}
+.ofertas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	p{
+		@include letras(15px, #ffff);
+		border: $border;
+		background-color: $fondo_normales;
+
+	}
+}
+@media screen and (min-width:992px){
+	h3{
+		text-align: center;
+	}
+	.ofertas{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
