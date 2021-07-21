@@ -1,0 +1,63 @@
+@import "vars";
+.titulo{
+	background-color: $fondo_titulos;
+	margin-top: 30px;
+	border: $border;
+}
+h2{
+	color: $letras_color;
+	text-align: center;
+	margin-top: 0px;
+}
+.lista{
+	display: flex;
+	flex-direction: column;
+}
+.lista__titulos{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	border-top: $border;
+	border-bottom: $border;
+}
+.h3{
+	border-left: $border;
+}
+.lista__pyp{
+	background-color: $fondo_normales;
+}
+.lista__productos{
+	display: flex!important;
+	justify-content: space-around;
+	width: 100vw;
+	border-bottom: $border;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.ul{
+	border-right: $border;
+}
+li{
+	list-style: none;
+}
+.input{
+	width: 3em;
+}
+.total{
+	display: flex;
+	justify-content: space-around;
+}
+.enviar{
+	display: flex;
+	justify-content: center;
+}
+@media screen and (min-width: 900px){
+	.titulo{
+		margin: 50px;
+	}
+	.lista__productos{
+		width: 92vw;
+	}
+}
