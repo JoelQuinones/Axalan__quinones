@@ -13,6 +13,10 @@
 }
 .card{
 	background-color: $fondo_titulos;
+	transition: 1s;
+	&:hover{
+		transform: scale(1.2);
+	}
 }
 @media screen and (min-width: 992px){
 	.productos{
