@@ -11,13 +11,22 @@ main{
 	margin-top: 50px;
 	background-color: $fondo_titulos;
 	box-shadow: -10px -10px 5px $fondo_titulos;
+	transform: translate(-1500px);
+	opacity: 0;
 }
 .main__ofertas{
 	div{
-		display: flex;
-		flex-wrap: wrap;
+		@include flex(flex, column, wrap, center, center);
 		b{
 			color: $letras_color;
+		}
+	}
+	.ofertas__img{
+		.ofertas{
+			transition: 1s;
+			&:hover{
+			transform: scale(1.1);
+		}
 		}
 	}
 }
@@ -29,10 +38,14 @@ main{
 		}
 	}
 	.nosotros{
-		dispay: flex;
+		display: flex;
 	}
 	.main__ofertas{
 		margin-top: 50px; 
+		div{
+			flex-direction: row;
+			align-items: flex-star;
+		}
 		.ofertas__img{
 			justify-content: space-around;
 		}

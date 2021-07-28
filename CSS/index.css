@@ -8,13 +8,23 @@ main {
 .main__nosotros {
   margin-top: 50px;
   background-color: #1f1f21;
-  box-shadow: -10px -10px 5px #1f1f21; }
+  box-shadow: -10px -10px 5px #1f1f21;
+  transform: translate(-1500px);
+  opacity: 0; }
 
 .main__ofertas div {
   display: flex;
-  flex-wrap: wrap; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .main__ofertas div b {
     color: #ffff; }
+
+.main__ofertas .ofertas__img .ofertas {
+  transition: 1s; }
+  .main__ofertas .ofertas__img .ofertas:hover {
+    transform: scale(1.1); }
 
 @media screen and (min-width: 992px) {
   main {
@@ -22,8 +32,11 @@ main {
     main .carousel-caption {
       color: black; }
   .nosotros {
-    dispay: flex; }
+    display: flex; }
   .main__ofertas {
     margin-top: 50px; }
+    .main__ofertas div {
+      flex-direction: row;
+      align-items: flex-star; }
     .main__ofertas .ofertas__img {
       justify-content: space-around; } }
